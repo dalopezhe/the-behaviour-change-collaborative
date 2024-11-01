@@ -1,0 +1,1958 @@
+/* COLORS
+#2A2A2A - black (for text)
+#5F73F5 - Blue-purple
+#FBDD48 - yellow
+#D7D7D7 - grey
+*/
+
+/* ============= FONT ============= */
+/* body font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap');
+
+
+/* ================ Global styles ================ */
+html, body {
+    width: 100vw;
+    
+}
+#wrapper {
+    position: relative;
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	font-size: 18px;
+	font-weight: 300;
+	font-family: 'Noto Sans JP', sans-serif;
+    /* To centre the entire web page */
+	
+	
+}
+/* ================= FORMAT ================ */
+h1 {
+	font-size: 2.5em;
+	color: #2A2A2A;
+}
+
+h2 {
+	color: #5F73F5;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------Header and Navigation --------------------- */
+header {
+    background-color: #5F73F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    width: 100%; /* Full width */
+    position: fixed; /* Keep it at the top */
+    top: 0; /* Stick to the top */
+    left: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+    
+
+
+nav {
+    position: relative;
+    
+        
+    }
+}
+
+
+
+nav ul {
+    display: flex; 
+    list-style: none;
+    justify-content: flex-end; /
+}
+
+nav ul li {
+    display: inline-block; /* Keep inline items for large screens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 19px 30px; /* Original padding for large screens */
+    transition: color 0.3s ease;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+nav ul li a[href="Donate.html"] {
+    border: 2px solid #FBDD48;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #FBDD48;
+    color: black;
+}
+
+nav ul li a[href="Donate.html"]:hover {
+    background-color: #FBDD48;
+    color: #5F73F5;
+}
+
+/*---------------------Main Image---------------------*/
+
+.main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), #FAE1DC url(Images/Template1.png) no-repeat top center / cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    width: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    transition: background-size 0.5s ease-in-out;
+}
+
+.main h2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+    margin-top: 350px;
+}
+
+.custom-button {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBDD48;
+    color: #2A2A2A;
+    font-size: 24px; /* Base font size */
+    text-decoration: none;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 900px; /* Center button with equal margins on left and right */
+    margin-left: 50px;
+    padding: 10px 30px; /* Default padding */
+}
+
+/* Hover effect */
+.custom-button:hover {
+    background-color: #4e60d4;
+    cursor: pointer;
+    color: white;
+}
+    
+
+/*---------------------Impact Section---------------------*/
+#Impact {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #FBDD48;
+padding: 100px 200px;
+border-radius: 0px 0px 16px 16px;
+}
+
+#Impact h2 {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #2A2A2A;
+    
+}
+
+#Impact p {
+    padding: 0px 0px  50px;
+    text-align: center;
+        
+}
+
+
+#donation-breakdown {
+    display: flex;
+    justify-content: space-between;
+      
+}
+
+.banner_content {
+    
+    text-align: center;
+    color: #5F73F5;
+    font-weight: 600;
+    font-size: 16px;
+  
+}
+
+.banner_content h1 {
+    font-size: 5em;
+    font-weight: 600;
+    color:#5F73F5;
+
+}
+
+/*---------------------Events and Workshops section---------------------*/
+
+
+#events h2{
+    padding: 100px 0 50px;
+    color: #2A2A2A;
+    text-align: center;
+}
+
+
+.Programs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 100px;
+    
+}
+
+.Programs h3{
+    padding: 20px;
+    color: #5F73F5;
+  
+}
+.Programs p{
+    padding-right: 20px;
+    padding-bottom: 20px;
+  
+}
+
+
+.Programs img{
+    border-radius: 16px;
+}
+
+/*---------------------Get Involved---------------------*/
+
+#Involved{
+    display: flex;
+    justify-content: center;
+    padding: 60px 90px;
+    background: #FBDD48;
+    border-radius: 16px 16px 0px 0px;  
+}
+
+#Involved h2 {
+    padding-left: 80px;
+    color: #5F73F5;
+}
+
+
+#Involved p {
+    text-align: justify;
+    margin: 40px 120px;
+    color: #2A2A2A;
+    font-weight: 400;
+}
+
+/*---------------------Footer---------------------*/
+
+
+/*footer General*/
+footer{
+    display: flex; 
+    background: #D7D7D7;
+    padding: 100px;
+    
+    
+}
+
+#footer2nd{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+#footer2nd h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #5F73F5;
+}
+
+#footer2nd form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;  
+}
+
+#footer2nd input[type="email"] {
+    width: 300px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #5F73F5;  
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+#footer2nd input[type="email"]:focus {
+    border-color: #2A2A2A;  /* Change border color on focus */
+}
+
+#footer2nd button {
+    background-color: #5F73F5;
+    color: white;
+    padding: 10px 20px;
+    
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#footer2nd button:hover {
+    background-color: #2A2A2A;  /* Darkens on hover */
+}
+
+
+
+#footer3rt{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;  
+    
+}
+
+#footer3rt h1{
+    
+   
+    text-align:left;
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #5F73F5;
+    padding-left: 30px;
+
+}
+
+#Content-footer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px
+}
+
+/*---------------------Logos Section---------------------*/
+#logos {
+    display: flex;
+    flex-direction:column;  
+    
+}
+
+.links2{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.links2 a{
+    
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+
+#logos h1{
+    padding-bottom: 40px;
+    padding-left: 10px;
+    font-size: 36px;
+    color: #5F73F5;
+}
+
+.Icon {
+    display:inline-flex;
+    padding: 10px;
+
+}
+
+/*WA Social*/
+
+#socialM{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 50px;
+}
+
+
+
+/*---------------------Address---------------------*/
+address p{
+    padding-top: 125px;
+    
+}
+
+
+address{
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+
+.links a{
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+
+
+
+.footer-banner {
+    height: 1cm; 
+    background-color: #2A2A2A; 
+    width: 100%; 
+    position: relative; 
+}
+
+/*=================ABOUT US==========================*/
+
+
+
+/*---------------------Main Img---------------------*/
+#AboutSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url(Images/IMG10.png) no-repeat top center / cover;
+    display: flex;
+    flex-direction: column;
+    height: 70vh; 
+    
+}
+
+#AboutSection h2 {
+    color: white;
+    margin-top: 350px;
+    padding-left: 50px;
+}
+
+#AboutSection p {
+    color: white;
+    padding: 50px;
+    
+   
+   
+    
+    
+}
+
+
+/* ---------------------Vision section---------------------*/
+
+#vision {
+    background: #D7D7D7;
+    padding: 100px 200px;
+}
+
+.statement{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    
+}
+
+.statement p{
+    margin-bottom: 20px;
+    
+    
+}
+
+.statement h2{
+    padding-bottom: 50px;
+}
+
+
+
+
+/*---------------------Meet the team---------------------*/
+
+#team {
+    background: #5F73F5;
+    padding: 100px;
+    border-radius: 0px 0px 16px 16px;
+}
+
+#team h2 {
+    
+    color: white;
+    margin-bottom: 100px;
+    padding-left: 100px;
+    
+    
+}
+
+#team-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 80px;
+}
+
+.team-member {
+    background-color: white; /* Box background color */
+    padding: 20px;
+    border-radius: 10px; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px; 
+    border: 3px solid #FBDD48;
+}
+
+.team-member img {
+    border-radius: 5px; /* Optional rounded image */
+}
+
+.team-member h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #5F73F5;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #2A2A2A;
+}
+
+/*---------------------Donor Heroes---------------------*/
+
+#heroes {
+    display: flex;
+    padding: 50px 100px;
+}
+
+
+.title {
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    
+}
+
+.heroes-content {
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 50%; 
+    padding-right: 60px; 
+    text-align:left;
+    padding-bottom: 50px;
+}
+
+
+#heroes img{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    border-radius: 5px;
+}
+
+
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FBDD48;
+    
+    border-radius: 5px;
+    font-weight: bold;
+    text-align:center;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    margin-right: 0px 50px;
+   
+    
+    
+}
+
+button:hover {
+    background-color: #4e60d4;
+    cursor: pointer;
+    color:white;
+}
+
+
+/*---------------------Contact Us---------------------*/
+#contact{
+    background: #5F73F5;
+    margin-top: 50px;
+    border-radius: 16px 16px 0px 0px;
+    padding-bottom: 100px
+}
+
+#contact h2{
+    display: flex;
+    flex-direction: column;
+    color: #FBDD48;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+#contact p {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+    
+}
+#contact a{
+    padding: 100px 200px;
+   
+}
+
+/*=================== OUR CAUSES SECTION==================*/
+
+
+/*---------------------Main Img---------------------*/
+#main-causes {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url(Images/IMG8.png) no-repeat top center / cover;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
+    width: auto; 
+    border-radius: 0px 0px 16px 16px;
+          
+}
+
+
+#main-causes h2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 550px;
+    color: white;
+    padding-left: 50px;
+    
+   
+    
+}
+
+#main-causes p{
+display: flex;
+flex-direction: column;
+padding: 50px;
+color: white;
+font-size: 24px;
+
+
+
+}
+
+
+/*---------------------Real Stories---------------------*/
+
+#stories-content h2{
+    padding-top: 100px;
+    color: #2A2A2A;
+    text-align: center;
+    
+}
+
+#stories-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.story h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #5F73F5;
+}
+
+.story p{
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.story img{
+    border-radius: 16px 16px 16px 16px;
+}
+
+/*=====================GET INVOLVED SECTION====================*/
+
+
+/*---------------------Main---------------------*/
+#main-involved {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),url(Images/IMG9.png) no-repeat top center / cover;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
+    width: auto; 
+    border-radius: 0px 0px 16px 16px;
+    
+       
+}
+
+#main-involved h2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 550px;
+    color: white;
+    padding-left: 50px;
+    
+}
+
+#main-involved p{
+display: flex;
+flex-direction: column;
+padding: 50px;
+color: white;
+font-size: 24px;
+
+}
+
+/*---------------------Ways to get Involved---------------------*/
+
+
+
+#involved-content h2{
+    padding-top: 100px;
+    color: #5F73F5;
+    text-align: center;
+    
+}
+
+#involved-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+    grid-template-rows: repeat(2, auto);    /* 2 rows, height auto */
+    gap: 20px;  /* Space between the grid items */
+    padding: 100px;  /* Add padding to the container */
+}
+
+
+
+#ways {
+    border: 2px solid #5F73F5;  /* Solid border around each box */
+    padding: 20px;
+    border-radius: 10px;  /* Optional, rounds the corners of each box */
+    background-color:#D7D7D7;  /* Light background for contrast */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);  /* Slight shadow */
+}
+
+/* Align the text in the "ways" boxes */
+#ways h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #5F73F5;
+    padding-top: 0px;
+    
+    text-align:left;
+}
+
+#ways p {
+    padding-right: 0;  /* Remove padding-right */
+    margin-bottom: 20px;  /* Space below the paragraph */
+}
+
+#ways a {
+    color: #5F73F5;  /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ways a:hover {
+    color: #2A2A2A;  /* Change link color on hover */
+}
+
+/*======================DONATE NOW SECTION=====================*/
+
+
+#donation-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),url('Images/IMG1.JPG') no-repeat center center/cover;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.donation-content {
+    background-color: rgba(255, 255, 255, 0.6); /* White background with some transparency */
+    padding: 50px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.donation-text {
+    flex: 1;
+    text-align: left;
+}
+
+.donation-text h2 {
+    color: #5F73F5;
+    padding-bottom: 50px;
+    margin-top: 150px;
+    margin-right: 50px;
+    
+}
+
+.donation-text p {
+    font-size: 18px;
+    color: #2A2A2A;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+.donation-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.donation-form h1 {
+    
+    margin-bottom: 10px;
+    color: #2A2A2A;
+}
+
+.donation-form label {
+    font-size: 16px;
+    color: #2A2A2A;
+    margin-right: 80px;
+}
+
+.donation-amounts {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-bottom: 40px;
+}
+
+.donation-amounts input[type="radio"] {
+    margin-right: 5px;
+}
+
+.donation-form input[type="text"], .donation-form button {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #5F73F5;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.donation-form button {
+    background-color: #FBDD48; 
+    color:2a2a2a;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.donation-form button:hover {
+    background-color: #5F73F5;
+    color:white;
+}
+
+
+/* Style the text inside the form */
+.donation-form label, 
+.donation-form input[type="text"], 
+.donation-form button {
+    font-size: 18px; 
+    color: #2a2a2a;
+    font-weight: 400;
+     
+}
+
+/* ================== MEDIA QUERIES ================== */
+
+/* ---------------------Tablet (medium screens)--------------------- */
+@media screen and (max-width: 1189px) {
+    #wrapper {
+        width: 90%;
+    }
+    
+    nav ul li a{
+        
+        font-size: 16px;
+    }
+    
+    .main h2 {
+        margin-top: 500px;
+        padding: 30px;
+        font-size: 1.5em;
+        font-size: 2em;
+    }
+    
+    
+    .custom-button {
+        font-size: 20px; /* Smaller font size */
+        padding: 8px 25px; /* Reduced padding */
+        margin: 0 20px; /* Reduced margins */
+    }
+
+    
+
+    header a img {
+    width: auto; /* Ensure the logo doesn’t stretch */
+    max-width: 250px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+    img {
+        width: 100%; /* Makes images responsive */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 100%; /* Prevent overflow */
+    }
+    
+    
+    #footer3rt img {
+    width: 450px;
+    height: auto;
+    
+}
+    
+    #logos .Icon img {
+    width: auto; 
+    max-width: 50px; /* Set a maximum width for the icons */
+    height: auto; /* Maintain aspect ratio */
+}
+    
+    
+    
+    p {
+        font-size: 16px; /* Reduce paragraph size */
+    }
+    
+    
+    .custom-button {
+        font-size: 18px;
+        align-items: center;
+        padding: 15px 25px;
+        margin-right: 800px;
+    }
+
+    #Impact {
+        padding: 60px 100px;
+    }
+    
+    #Impact h1{
+        font-size: 4em;
+    }
+    
+/* ---------------------Events and workshops 1189px---------------------*/
+
+    .Programs-container {
+        flex-direction: column;
+        margin: 0;
+        align-content: center;
+    }
+
+    .Programs-container .Programs {
+        margin-bottom: 30px;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Programs h3{
+        padding-left: 0px;
+    }
+    
+    #Involved p {
+        margin:40px 40px;
+        
+    }
+    
+/*    ---------------------Footer 1189px---------------------*/
+
+    footer {
+        flex-direction: column;
+        padding: 50px 20px;
+        align-items: center; /* Center align */
+    }
+    
+   
+    
+    #Content-footer{
+        padding: 0px;
+    }
+    
+    #logos h1 {
+        padding-top: 40px
+    }
+    
+    
+    
+/*    ---------------------ABOUT US---------------------*/
+    
+    #team{
+        padding: 50px;
+    }
+    
+    #vision{
+        padding: 80px;
+    }
+    
+    .title {
+        padding: 20px 50px
+    }
+    
+    #heroes img{
+        
+    
+    max-height: 30vh; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    }
+    
+    #heroes {
+        padding: 50px;
+    }
+    
+    #stories-container {
+        flex-direction: column;
+        margin: 0px;
+        align-content: center;
+    }
+
+    #stories-container .story {
+        margin-bottom: 30px;
+        align-items: center;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    
+    .donation-text p{
+        font-size: 16px;
+    }
+}
+
+
+/*---------------------Medium Screens 1088px---------------------*/
+@media screen and (max-width: 1088px) {
+    .custom-button {
+        
+        align-items: center;
+        padding: 15px 25px;
+        margin-right: 700px;
+    } 
+    
+}
+/*=====================SMALL MEDIA SCREENS=====================*/
+
+
+@media screen and (max-width: 977px) {
+    
+    
+    
+    h2{
+        font-size: 2.5em;
+    }
+   
+    #AboutSection p{
+        font-size: 20px;
+    }
+    
+    #main-causes p{
+        font-size: 20px;
+    }
+    
+    
+    
+   .custom-button {
+        font-size: 16px;
+        align-items: center;
+        padding: 15px 25px;
+        margin-right: 600px;
+    } 
+    
+    #Impact {
+        padding: 50px 50px;
+    }
+    
+    .Programs-container .Programs {
+        margin-bottom: 30px;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    #Involved{
+    padding: 50px;
+}
+    
+#Involved h2{
+    font-size: 2.5em;
+}
+    
+#team{
+        padding: 50px 0px;
+    }    
+    
+    
+    #contact p {
+        
+        padding: 0px 100px;
+    }
+    
+    #Contact h2 {
+        
+        padding: 50px 100px;
+    }
+    
+    #contact a {
+        
+        padding: 50px 100px;
+    }
+    
+     #stories-container .story {
+        margin-bottom: 30px;
+        align-items: center;
+        margin-left: 200px;
+        margin-right: 300px;
+    }
+    
+    
+}
+
+/* ---------------------934px---------------------*/
+@media screen and (max-width: 934px){
+    
+    nav ul li a{
+        
+        font-size: 14px;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+    
+     h2{
+        font-size: 2em;
+    }
+   
+    #AboutSection p{
+        font-size: 18px;
+    }
+    
+    #main-causes p{
+        font-size: 18px;
+    }
+    
+    
+    
+   .custom-button {
+        font-size: 16px;
+        
+    } 
+}
+
+/*---------------------891px---------------------*/
+    
+@media screen and (max-width: 891px){
+    
+   .custom-button {
+        font-size: 16px;
+        align-items:center;
+        padding: 10px 0px;
+        margin-right: 500px;
+
+          
+}
+    
+    
+    nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 19px 20px;
+    transition: color 0.3s ease;
+     font-weight: 700;
+    line-height: 1.2;
+}
+    
+}
+
+/*---------------------831px---------------------*/
+
+@media screen and (max-width: 831px){
+    nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 19px 10px;
+    transition: color 0.3s ease;
+     font-weight: 700;
+    line-height: 1.2;
+}
+    
+    
+    #heroes img{
+        
+    
+    max-height: 30vh; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    }
+    
+    #heroes {
+        padding: 20px;
+    }
+    
+    
+
+    #stories-container .story {
+        margin-bottom: 30px;
+        align-items: center;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    
+    .Programs-container .Programs {
+        margin-bottom: 30px;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    #involved-container{
+        padding: 50px
+    }
+    
+}
+
+/* ---------------------771px---------------------*/
+    
+@media screen and (max-width: 771px){
+        
+.main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), #FAE1DC url(Images/Template1.png) no-repeat top center / cover;
+    height: 60vh; 
+    width: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    transition: background-size 0.5s ease-in-out;
+}   
+    
+    
+.custom-button {
+        font-size: 16px;
+        align-items:center;
+        padding: 10px 0px;
+        margin-right: 400px;
+
+          
+}
+
+#wrapper {
+        width: 80%;
+    }
+    
+.main h2 {
+        margin-top: 300px;
+        padding: 30px;
+        font-size: 24px;
+        
+    }
+
+header a img {
+    width: auto; /* Ensure the logo doesn’t stretch */
+    max-width: 250px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+    img {
+        width: 100%; /* Makes images responsive */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 100%; /* Prevent overflow */
+    }
+    
+   
+
+    #Impact {
+        padding: 20px 50px;
+    }
+    
+    #Impact h1{
+        font-size: 3em;
+        
+    }
+    
+    #Impact p{
+        padding: 0px;
+    }
+    
+    .banner_content{
+        padding-top: 20px;
+    }
+    
+    #donation-breakdown{
+        flex-direction: column;
+        
+    }
+
+    
+
+    .Programs-container .Programs {
+        margin-bottom: 30px;
+        align-items: center;
+       
+    }
+    
+    
+    #Involved p {
+        margin:0px 40px;
+        
+    }
+    
+    #Involved h2{ 
+    font-size: 2em;
+        padding: 0px;
+    
+    }
+    
+    
+
+
+    #team{
+        padding: 20px;
+    }
+    
+    #team h2{
+        padding-left: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .team-member h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #5F73F5;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #2A2A2A;
+}
+    
+    #team-columns {
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+    grid-gap: 20px;
+    
+}
+    
+    #vision{
+        padding: 30px;
+    }
+    
+    .title {
+        padding: 20px 50px
+    }
+    
+    #heroes img{
+        
+    
+    max-height: 50vh; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    }
+    
+    #heroes {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+    }
+    
+
+
+.heroes-content {
+    display: flex;
+    padding: 0px;
+    margin-bottom: 40px;
+    
+   
+}
+
+    #contact p{
+        padding: 20px;
+    }
+     
+    #contact h2{
+        padding: 20px 20px;
+        
+    }
+    #contact a{
+        padding: 20px;
+    }
+    
+    #contact{
+        padding: 20px;
+        margin: 0px;
+    }
+    
+    #stories-content h2{
+        padding: 20px;
+    }
+    
+
+    #stories-container .story {
+        margin-bottom: 30px;
+        align-items: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .donation-text p{
+        font-size: 14px;
+    }
+    
+    /*wys to get involved*/
+
+
+
+#involved-content h2{
+    padding-top: 20px;
+    color: #5F73F5;
+    text-align: center;
+    
+}
+
+#involved-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;  }
+
+
+#ways h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #5F73F5;
+    padding-top: 0px;
+    
+    text-align:left;
+}
+
+#ways p {
+    padding-right: 0;  
+    margin-bottom: 10px;  
+}
+
+#donation-section {
+        padding: 20px 20px; 
+    }
+
+    .donation-content {
+        flex-direction: column; 
+        padding: 20px 20px; 
+    }
+
+    .donation-text {
+        text-align: center; 
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .donation-text h2 {
+        margin-top: 20px; 
+        font-size: 28px; 
+        padding-bottom: 20px; 
+    }
+
+    .donation-text p {
+        font-size: 16px; 
+        margin-right: 0; 
+    }
+
+    .donation-form h1 {
+        font-size: 28px; /* Adjust heading size */
+        margin-bottom: 10px; /* Reduce bottom margin */
+    }
+
+    .donation-form label {
+        font-size: 14px; 
+        margin-right: 0; 
+    }
+
+    .donation-amounts {
+        flex-direction: column; 
+        margin-bottom: 20px; 
+        
+    }
+
+    .donation-form input[type="text"], 
+    .donation-form button {
+        font-size: 16px; 
+        padding: 8px; /* Reduce padding */
+    }
+
+    .donation-form button {
+        margin-top: 5px; 
+    }
+
+nav ul {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column; /* Stack items vertically */
+        background-color: #FBDD48;
+    
+        position: absolute; /* Position below the icon */
+        right: 0; /* Align to the right */
+        z-index: 1000; 
+        padding: 20px;
+    
+        border-radius: 5px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        
+    
+    }
+    
+    #dropdown-menu a {
+    white-space: nowrap; /* Prevent text from wrapping */
+        
+}
+    nav ul li a{
+        color: black;
+        display: block;
+        
+        
+        
+    }
+    
+    nav ul li a:hover{
+        color:#5F73F5;
+    }
+    
+    
+    .menu-toggle:checked + .menu-icon + #dropdown-menu {
+        display: flex; /* Show the dropdown when the checkbox is checked */
+    }
+
+    .menu-icon {
+        font-size: 30px; /* Size of the icon */
+        cursor: pointer; /* Show pointer on hover */
+        color: white; /* Icon color */
+    }
+    
+    .main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), #FAE1DC url(Images/Template1.png) no-repeat top center / cover;
+    height: 70vh; 
+    width: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    transition: background-size 0.5s ease-in-out;
+}
+  
+}
+
+    
+    
+    
+    
+/* ---------------------769px---------------------*/
+
+
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none; /* Hide the hamburger icon */
+    }
+    
+    .menu-toggle{
+        display: none;
+        
+    }
+    
+    
+    
+
+    }
+
+/*---------------------400px ---------------------*/
+@media screen and (max-width: 400px){
+    
+html, body {
+    width: 100vw;
+    
+}
+#wrapper {
+    position: relative;
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ header {
+    background-color: #5F73F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjusted padding for smaller screens */
+    width: 100%; /* Full width */
+    position: fixed; /* Keep it at the top */
+    top: 0; /* Stick to the top */
+    left: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+
+/*-------------------NAV MENU 400px------------------------*/
+nav ul {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column; /* Stack items vertically */
+        background-color: #FBDD48;
+    
+        position: absolute; /* Position below the icon */
+        right: 0; /* Align to the right */
+        z-index: 1000; 
+        padding: 20px;
+    
+        border-radius: 5px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        
+    
+    }
+    
+    #dropdown-menu a {
+    white-space: nowrap; /* Prevent text from wrapping */
+        
+}
+    nav ul li a{
+        color: black;
+        display: block;
+        
+        
+        
+    }
+    
+    nav ul li a:hover{
+        color:#5F73F5;
+    }
+    
+    
+    .menu-toggle:checked + .menu-icon + #dropdown-menu {
+        display: flex; /* Show the dropdown when the checkbox is checked */
+    }
+
+    .menu-icon {
+        font-size: 30px; /* Size of the icon */
+        cursor: pointer; /* Show pointer on hover */
+        color: white; /* Icon color */
+    }
+    
+    .main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), #FAE1DC url(Images/Template1.png) no-repeat top center / cover;
+    height: 70vh; 
+    width: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    transition: background-size 0.5s ease-in-out;
+}
+        
+
+    
+    
+.custom-button {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBDD48;
+    color: #2A2A2A;
+    font-size: 20px; /* Reduced font size */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 0 20px; /* Reduced margins */
+    padding: 8px 20px; /* Reduced padding */
+}
+
+
+
+   #Impact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FBDD48;
+    padding: 50px 20px; /* Adjusted padding */
+    border-radius: 0px 0px 16px 16px;
+}
+
+#Impact h2 {
+    padding-bottom: 20px; /* Reduced padding */
+    text-align: center;
+    color: #2A2A2A;
+}
+
+#Impact p {
+    padding: 0px 0px 20px; /* Reduced padding */
+    text-align: center;
+}
+    
+   #donation-breakdown {
+    display: flex;
+    flex-direction: column; /* Changed to column for smaller screens */
+    justify-content: center;
+    align-items: center; /* Center content */
+}
+    
+
+.Programs-container .Programs {
+        margin-bottom: 30px;
+        align-items: center;
+        
+    padding: 20px;
+    }
+    
+    
+    #Involved p {
+        margin-left: 40px;
+        margin-right: 0px;
+        
+    }
+    
+    #Involved h2{ 
+    font-size: 1.17em;
+        padding: 0px;
+    padding-top: 50px;
+    
+    }
+    
+   
+#AboutSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url(Images/IMG6.png) no-repeat top center / cover;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+     
+    width: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    transition: background-size 0.5s ease-in-out;
+    
+    
+
+}
+    
+    
+
+
+
+
+#AboutSection h2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px; /* Reduced padding for smaller screens */
+    margin-top: 200px; /* Adjusted for better visibility */
+}
+
+#AboutSection p {
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+}
+
+    
+    
+    #team{
+        padding: 20px;
+    }
+    
+    #team h2{
+        padding-left: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .team-member h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #5F73F5;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #2A2A2A;
+}
+    
+    #team-columns {
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+    grid-gap: 20px;
+    
+}
+    
+    #vision{
+        padding: 30px;
+    }
+    
+    .title {
+        padding: 20px 0px
+    }
+    
+    #heroes img{
+        
+    
+    max-height: 30vh; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    }
+    
+    #heroes {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        
+    }
+     
+   
+}
+
+    #contact p{
+        padding: 20px;
+    }
+     
+    #contact h2{
+        padding: 20px 20px;
+        
+    }
+    #contact a{
+        padding: 20px;
+    }
+    
+    #contact{
+        padding: 20px;
+        margin: 0px;
+    }
+    
+    #stories-content h2{
+        padding: 20px;
+    }
+
+/*----------------------Our Causes 400px-------------------------*/
+#stories-container .story {
+        margin-bottom: 30px;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    
+    }
+
+
+#main-causes {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url(Images/IMG8.png) no-repeat top center / cover;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center; 
+    height: 60vh; 
+    width: auto; 
+    border-radius: 0px 0px 16px 16px;
+    
+       
+}
+
+#main-causes h2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    color: white;
+    padding-left: 20px;
+    
+}
+
+#main-causes p{
+display: flex;
+flex-direction: column;
+padding: 20px;
+color: white;
+font-size: 18px;
+
+}
+
+#stories-content h2{
+    padding-top: 20px;
+    color: #2A2A2A;
+    text-align: center;
+    
+}
+
+#stories-content{
+    padding: 0px;
+}
+
+
+.story img{
+    border-radius: 16px 16px 16px 16px;
+}
+
+#main-involved {
+    
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center; 
+    height: 60vh; 
+    width: auto; 
+    border-radius: 0px 0px 16px 16px;
+    
+       
+}
+#main-involved h2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    color: white;
+    padding-left: 20px;
+    
+}
+
+#main-involved p{
+display: flex;
+flex-direction: column;
+padding: 20px;
+color: white;
+font-size: 18px;
+
+
+}
+
+
+
+
+    
+    
+    
+    
+ 
+
+
+
+
+    
+
+
+
